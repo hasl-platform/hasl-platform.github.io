@@ -19,7 +19,7 @@ By using HACS you will also make sure that any new versions are installed by def
 ## Getting started with HASL!
 1. [Getting API keys from Trafiklab](trafiklab)
 2. Install via [HACS](hacs_install) (recomended) or [manual](manual_install) (not recomended)
-3. Customize your install using [configuration](yaml-configuration)
+3. Customize your install using [configuration](yaml_configuration)
 4. Install [lovelace cards](lovelace_cards) to display in frontend
 5. Enjoy!
 
