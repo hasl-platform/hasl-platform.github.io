@@ -11,8 +11,9 @@ Home Assistant SL Sensor (HASL)
 
 This is a platform for Home Assistant that can be used to create "Departure board" or "Traffic Situation" sensors for buses and trains in Stockholm, Sweden. You have to install it as a custom component and you need to get your own API keys from SL / Trafiklab. Originally started with [fredrikbaberg SL sensor](https://github.com/fredrikbaberg/ha-sensor-sl) that was forked into [Home Assistant SL Sensor by DSorlov](https://github.com/DSorlov/hasl-platform) and now moved to its own organisation and life.
 
-## Getting started!
-1. [Install via HACS](hacs_install) (recomended) or [Manual install](manual_install)
+## Getting started with HASL!
+1. [Getting API keys from Trafiklab](trafiklab)
+2. Install via [HACS](hacs_install) (recomended) or [manual](manual_install) (not recomended)
 
 ## Configuration variables
 | Name | Required? | Description | Default |
