@@ -2,6 +2,6 @@ theme: jekyll-theme-cayman
 title: Home Assistant SL Platform
 description: This site is for documentation and examples for the Home Assistant SL Platform (HASL)
 github:
-  zip_url: https://github.com/hasl-platform/hasl-sensor/zipball/master
-  tar_url: https://github.com/hasl-platform/hasl-sensor/tarball/master
-  repository_url: https://github.com/hasl-platform/
+  zip_url: https://github.com/hasl-sensor/integration/zipball/master
+  tar_url: https://github.com/hasl-sensor/integration/tarball/master
+  repository_url: https://github.com/hasl-sensor/
