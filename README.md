@@ -3,7 +3,7 @@
 ![stability-stable](https://img.shields.io/badge/stability-released-lightgrey.svg)
 ![version](https://img.shields.io/badge/version-2.2.2-green.svg)
 ![maintained](https://img.shields.io/maintenance/yes/2021.svg)
-[![maintainer](https://img.shields.io/badge/maintainer-daniel%20sörlöv-blue.svg)](https://github.com/DSorlov)
+[![maintainer](https://img.shields.io/badge/maintainer-dsorlov-blue.svg)](https://github.com/DSorlov)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Home Assistant SL Sensor (HASL)
