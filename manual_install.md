@@ -2,13 +2,11 @@
 
 ## Manual installation (not advised)
 
-The integration can be installed manually by copying some files from this repo to your install. Note that HASL will not automatically update as newer versions are released so you need to keep track of that yourself. We recomend using [HACS](hacs) for install and keeping up to date.
+The integration can be installed manually by copying some files from this repo to your install. Note that HASL will not automatically update as newer versions are released so you need to keep track of that yourself. We recomend using [HACS](hacs) for install and keeping up to date. Manuall installs are not supported nor recomended.
 
-Please copy files:
+Note that HASL will not automatically update as newer versions are released so you need to keep track of that yourself. We recomend using HACSv3 as outlined above in the previous section.
 
-[`hasl/__init__.py`](https://github.com/hasl-platform/hasl-sensor/blob/master/custom_components/hasl/__init__.py) to `<config>/custom_components/hasl/__init__.py`
-[`hasl/sensor.py`](https://github.com/hasl-platform/hasl-sensor/blob/master/custom_components/hasl/sensor.py) to `<config>/custom_components/hasl/sensor.py`
-[`hasl/manifest.json`](https://github.com/hasl-platform/hasl-sensor/blob/master/custom_components/hasl/manifest.json) to `<config>/custom_components/hasl/manifest.json`
+Please copy all files fron the `custom_components\hasl3` files into the `<config>/custom_components/hasl3/` directory. You need to restart Home Assistant and reload the GUI to make sure the integration is available.Goto Integrations and add HASLv3.
 
 where `<config>` is your Home Assistant configuration directory.
 

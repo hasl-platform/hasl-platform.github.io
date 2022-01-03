@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 title: Home Assistant SL Platform
-description: This site is for documentation and examples for the Home Assistant SL Platform (HASL)
+description: This site is for documentation for the Home Assistant SL Platform (HASL)
 github:
-  zip_url: https://github.com/DSorlov/hasl-platform/zipball/master
-  tar_url: https://github.com/DSorlov/hasl-platform/tarball/master
-  repository_url: https://github.com/DSorlov/hasl-platform
+  zip_url: https://github.com/hasl-platform/integration/zipball/master
+  tar_url: https://github.com/hasl-platform/integration/tarball/master
+  repository_url: https://github.com/hasl-platform/integration

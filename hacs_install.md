@@ -2,22 +2,12 @@
 
 ## Automatic installation using HACS
 
-After you added the integration then add the desired configuration in config. Here is an example of a typical configuration:
+If you haven't already you must have [HACS installed](https://hacs.xyz/docs/setup/download).
 
-```yaml
-sensor:
-- platform: hasl
-  ri4key: YOUR-RI4-KEY-HERE
-  si2key: YOUR-SI2-KEY-HERE
-  tl2key: YOUR-OPTIONAL-TI2-KEY-HERE
-  sensors:
-   - friendly_name: Mölnvik
-     sensor_type: departures
-     siteid: 4244
-     lines: ['474', '480C']
-     direction: 1
-   - friendly_name: Trafikstatus
-     sensor_type: status
-```
+Go into HACS and search for HASL under the Integrations headline.
 
-Restart Home Assistant to make sure it loads and calls the integration!
+You will need to restart Home Assistant to finish the process.
+
+Once that is done reload your GUI (caching issues preventing the integration to be shown).
+
+Goto Integrations and add HASL integrations.
