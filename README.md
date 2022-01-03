@@ -24,6 +24,6 @@ By using HACS you will also make sure that any new versions are installed by def
 5. Enjoy!
 
 ## Documentation and resources
-[Full documentation](https://github.com/hasl-sensor/integration/blob/master/README.md)
-[Changelog and updates](https://github.com/hasl-sensor/integration/blob/master/CHANGELOG.md)
-[Issues, upcomming features and wishlists](https://github.com/hasl-sensor/integration/issues).
+* [Full documentation](https://github.com/hasl-sensor/integration/blob/master/README.md)
+* [Changelog and updates](https://github.com/hasl-sensor/integration/blob/master/CHANGELOG.md)
+* [Issues, upcomming features and wishlists](https://github.com/hasl-sensor/integration/issues).
