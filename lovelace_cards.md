@@ -17,7 +17,7 @@ In this example we search for a trip between the station Mölnvik (Location 4244
 * Configure the Route Sensor with API-key from Trafic Lab ["SL Reseplanerare 3.1"](https://www.trafiklab.se/api/trafiklab-apis/sl/route-planner-31/) and a start and end of your planned trip.
 * Goto your Lovelace and create a Markdown Card, set the title to Gustavsbergs Centrum and paste in the following code:
 
-```markdown
+```
 {% set t = state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','duration').split(':') %}
 {% set hrs = t[0]|int % 24 %}
 {% set mns = t[1]|int %}
