@@ -17,12 +17,12 @@ In this example we search for a trip between the station Mölnvik (Location 4244
 * Configure the Route Sensor with API-key from Trafic Lab ["SL Reseplanerare 3.1"](https://www.trafiklab.se/api/trafiklab-apis/sl/route-planner-31/) and a start and end of your planned trip.
 * Goto your Lovelace and create a Markdown Card, set the title to Gustavsbergs Centrum and paste in the following code:
 
-```
-{% set t = state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','duration').split(':') %}
-{% set hrs = t[0]|int % 24 %}
-{% set mns = t[1]|int %}
+```markdown
+\{% set t = state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','duration').split(':') %\}
+\{% set hrs = t[0]|int % 24 %\}
+\{% set mns = t[1]|int %\}
 
-Restid {{ '{} timmar och {} minuter'.format(hrs,mns) if hrs > 0 else '{} minuter'.format(mns) }} med {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','first_leg') }} mot {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].direction }} från {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].from }} till {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].to }} vid {{ as_timestamp(state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','time')) | timestamp_custom('%H:%M') }}
+Restid \{\{ '\{\} timmar och \{\} minuter'.format(hrs,mns) if hrs > 0 else '\{\} minuter'.format(mns) \}\} med \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','first_leg') \}\} mot \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].direction \}\} från \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].from \}\} till \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].to \}\} vid \{\{ as_timestamp(state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','time')) | timestamp_custom('%H:%M') \}\}
 ```
 
 * Enjoy!
