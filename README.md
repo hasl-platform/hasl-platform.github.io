@@ -29,5 +29,5 @@ By using HACS you will also make sure that any new versions are installed by def
 * [Debugging and logging](debugging)
 * [Services and events](services)
 * [Roadmap](roadmap)
-* [Issues](https://github.com/hasl-sensor/integration/issues).
+* [Issues](https://github.com/hasl-sensor/integration/issues)
 * [Changelog](https://github.com/hasl-sensor/integration/blob/master/CHANGELOG.md)
