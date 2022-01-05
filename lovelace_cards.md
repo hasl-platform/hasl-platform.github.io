@@ -11,20 +11,12 @@ The mostly used card is the [departure-card](https://github.com/hasl-platform/lo
 You can use the Route sensor to intellegently determine the next trip from one place to another. Can be perfect to always have information about the quickes travel to work for instance. It will fetch all possible travels between the two points and sort by the quickest travel time across all means of travel. The sensor can then display this information on your Lovelace display.
 
 In this example we search for a trip between the station Mölnvik (Location 4244) and Gustavsbergs Centrum (Location 4200):
+
 ![NextTrip](https://user-images.githubusercontent.com/8133650/148201395-fc7d73d7-fa97-4951-965e-c7cd284f71c1.png)
 
 * Create a Route Sensor under Integrations in Home Assistant
 * Configure the Route Sensor with API-key from Trafic Lab ["SL Reseplanerare 3.1"](https://www.trafiklab.se/api/trafiklab-apis/sl/route-planner-31/) and a start and end of your planned trip.
-* Goto your Lovelace and create a Markdown Card, set the title to Gustavsbergs Centrum and paste in the following code:
-
-```markdown
-\{\% set t = state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','duration').split(':') \%\}
-\{\% set hrs = t[0]|int \% 24 \%\}
-\{\% set mns = t[1]|int \%\}
-
-Restid \{\{ '\{\} timmar och \{\} minuter'.format(hrs,mns) if hrs > 0 else '\{\} minuter'.format(mns) \}\} med \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','first_leg') \}\} mot \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].direction \}\} från \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].from \}\} till \{\{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].to \}\} vid \{\{ as_timestamp(state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','time')) | timestamp_custom('\%H:\%M') \}\}
-```
-
+* Goto your Lovelace and create a Markdown Card, set the title to Gustavsbergs Centrum and paste in the code from [route_sensor.txt](https://hasl.sorlov.com/route_sensor.txt)
 * Enjoy!
 
 ## Custom Lovelace Card: Traffic Disturbances Card
