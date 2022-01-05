@@ -17,13 +17,17 @@ This is a custom component so not installed by default in your Home Assistant in
 By using HACS you will also make sure that any new versions are installed by default and as simple as the install itself. We will not be adding ourselfs to the official repo for now due to the work that it takes to manage the administration, perhaps a task you are up for?
 
 ## Getting started with HASL
-1. [Getting API keys from Trafiklab](trafiklab)
-2. Install via [HACS](hacs_install) (recomended) or [manual](manual_install) (not recomended)
-3. Configure using GUI, to find Location IDs via [SL Platsuppslag](https://developer.trafiklab.se/api/sl-platsuppslag/konsol)
-4. Install [lovelace cards](lovelace_cards) to display in frontend
-5. Enjoy!
+1. Install via [HACS](hacs_install) (recomended) or [manual](manual_install) (not recomended)
+2. Configure using GUI
+3. Get [API keys](trafiklab) for FREE! Which APIs depend on your sensor need!
+4. Find Location IDs via [SL Platsuppslag](https://developer.trafiklab.se/api/sl-platsuppslag/konsol)
+5. Configure some [GUI/Lovelace](lovelace_cards) to display in frontend
+6. Enjoy!
 
 ## Documentation and resources
-* [Full documentation](https://github.com/hasl-sensor/integration/blob/master/README.md)
-* [Changelog and updates](https://github.com/hasl-sensor/integration/blob/master/CHANGELOG.md)
-* [Issues, upcomming features and wishlists](https://github.com/hasl-sensor/integration/issues).
+* [Sensor documentation](sensors)
+* [Debugging and logging](debugging)
+* [Services and events](services)
+* [Roadmap](roadmap)
+* [Issues](https://github.com/hasl-sensor/integration/issues).
+* [Changelog](https://github.com/hasl-sensor/integration/blob/master/CHANGELOG.md)

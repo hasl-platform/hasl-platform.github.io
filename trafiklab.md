@@ -12,6 +12,7 @@ They provide multiple APIs, the ones you want is
 
 Optionally you can also register for
 1. ["SL Trafikläget 2"](https://www.trafiklab.se/api/sl-trafiklaget-2) to get status sensors.
+2. ["SL Reseplanerare 3.1"](https://www.trafiklab.se/api/trafiklab-apis/sl/route-planner-31/) to use trip planning.
 
 When you have your API keys, you're ready to add the component to your Home Assistant either via [HACS](hacs_install) or [manual](manual_install).
 
