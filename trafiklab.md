@@ -7,7 +7,7 @@ This project is dependent on a number of APIs to aquire information. The APIs ar
 First, visit [https://www.trafiklab.se/api](https://www.trafiklab.se/api) and create a free account.
 
 They provide multiple APIs, the ones you want is
-1. ["SL Trafikinformation 4"](https://www.trafiklab.se/api/sl-realtidsinformation-4)
+1. ["SL Realtidsinformation 4"](https://www.trafiklab.se/api/sl-realtidsinformation-4)
 2. ["SL Störningsinformation 2"](https://www.trafiklab.se/api/sl-storningsinformation-2)
 
 Optionally you can also register for
