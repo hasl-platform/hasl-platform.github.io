@@ -1,5 +1,6 @@
-{% set t = state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','duration').split(':') %}
-{% set hrs = t[0]|int % 24 %}
-{% set mns = t[1]|int %}
-
-Restid {{ '{} timmar och {} minuter'.format(hrs,mns) if hrs > 0 else '{} minuter'.format(mns) }} med {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','first_leg') }} mot {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].direction }} från {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].from }} till {{state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips')[0].legs[0].to }} vid {{ as_timestamp(state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','time')) | timestamp_custom('%H:%M') }}
+{% for trip in state_attr('sensor.sl_4244_4200_route_sensor_kvarnberget','trips') -%}
+ {% set t = trip.duration.split(':') %}{% set hrs = t[0]|int % 24 %}{% set mns = t[1]|int %}
+ {%- if as_timestamp(trip.legs[0].time) > as_timestamp(now() + timedelta(minutes=10)) %}
+ * Restid {{ '{} timmar och {} minuter'.format(hrs,mns) if hrs > 0 else '{} minuter'.format(mns) }} från <b>{{trip.legs[0].from }}</b> till {{trip.legs[0].to }} med <b>{{trip.legs[0].name}} mot {{trip.legs[0].direction }}</b> som avgår kl <b>{{ as_timestamp(trip.legs[0].time) | timestamp_custom('%H:%M') }}</b>
+ {% endif -%}
+{%- endfor %}
