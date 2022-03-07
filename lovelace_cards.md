@@ -12,7 +12,7 @@ You can use the Route sensor to intellegently determine the next trip from one p
 
 In this example we search for a trip between the station Mölnvik (Location 4244) and Gustavsbergs Centrum (Location 4200):
 
-![NextTrip](https://user-images.githubusercontent.com/8133650/148201395-fc7d73d7-fa97-4951-965e-c7cd284f71c1.png)
+![NextTrip](https://user-images.githubusercontent.com/8133650/155983899-294650c9-4f41-417a-bcae-dc5b39e15548.png)
 
 * Create a Route Sensor under Integrations in Home Assistant
 * Configure the Route Sensor with API-key from Trafic Lab ["SL Reseplanerare 3.1"](https://www.trafiklab.se/api/trafiklab-apis/sl/route-planner-31/) and a start and end of your planned trip.
