@@ -5,8 +5,8 @@
 [![maintainer](https://img.shields.io/badge/maintainer-dsorlov-blue.svg)](https://github.com/DSorlov)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Swedish Public Transport Sensor (HASL) (formerly Home Assistant SL Sensor)
-==========================================================================
+Swedish Public Transport Sensor (HASL)
+======================================
 
 This is a platform for Home Assistant that can be used to create "Departure board" or "Traffic Situation" sensors for buses and trains in Stockholm, Sweden (but also for the rest of Sweden using Resrobot sensors). You have to install it as a custom component and you need to get your own API keys from SL / Trafiklab. Originally started with [fredrikbaberg SL sensor](https://github.com/fredrikbaberg/ha-sensor-sl) that was forked into [Home Assistant SL Sensor by DSorlov](https://github.com/DSorlov/hasl-platform) and now moved to its own organisation and life as [Home Assistant SL Sensor Integration](https://github.com/hasl-platform/integration). The name HASL comes from the time when the project was Home Assistant SL Sensor.
 
