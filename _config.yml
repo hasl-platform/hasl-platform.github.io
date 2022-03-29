@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-title: Home Assistant SL Platform
-description: This site is for documentation for the Home Assistant SL Platform (HASL)
+title: Swedish Public Transport Sensor (HASL)
+description: This site is for documentation for the Swedish Public Transport Sensor (aka HASL) (formerly Home Assistant SL Platform) 
 github:
   zip_url: https://github.com/hasl-platform/integration/zipball/master
   tar_url: https://github.com/hasl-platform/integration/tarball/master
